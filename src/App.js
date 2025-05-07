@@ -10,9 +10,10 @@ import Signin from './components/Signin';
 import Signup from './components/Signup';
 import 'bootstrap/dist/css/bootstrap.min.css';
 // import "bootstrap/dist/js/bootstrap.min.js";
-import pic2 from "./images/pic2.webp";
+import logo2 from "./images/logo2.png";
 
 import { BrowserRouter, Route, Routes ,Link} from 'react-router-dom';
+import PawprintChatWidget from './components/Chatbot';
 
 
 
@@ -20,13 +21,18 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
+      <br/>
+    <header className='header'>
+    <img src={logo2} alt="" className="w-45 h-50 logo"/>
+    </header>
+     
         <nav>
           <Link className="link" to="/signup">
             Sign up
           </Link>
           <Link className="link" to="/signin">
             Sign in
-          </Link>
+          </Link> 
           <Link className="link" to="/addproduct">
             Add product
           </Link>
@@ -34,10 +40,6 @@ function App() {
             Get product
           </Link>
         </nav>
-        <header className="App-header">
-          <h1>Opulent Delights</h1>
-        </header>
-        <img src={pic2} alt="" className="d-block w-100 carousel-image" />
         <br />
         <Routes>
           <Route path="/signup" element={<Signup />} />
@@ -47,6 +49,7 @@ function App() {
           <Route path="/payment" element={<Payment />} />
           <Route path="*" element={<Notfound />} />
           <Route path="/" element={<Getproduct />} />
+          <Route path="/pawprintchat" element={<PawprintChatWidget/>}/>
         </Routes>
       </BrowserRouter>
       <br />

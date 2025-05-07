@@ -7,16 +7,15 @@ const Footer = () => {
       {" "}
       <section class="row bg-dark">
         <div class="col-md-4 p-2 text-light">
-          <h3 class="text-center">About Us</h3>
+          <h3 class="text-center">🐾 About Us</h3>
           <p class="text-start">
-            Opulent Delight Crafts cozy moments, one cup at a time. Your
-            neighborhood spot for exceptional coffee and warm community.
+          We're a passionate pet company dedicated to guiding first-time paw parents with quality products, expert advice, and heartfelt support—helping you build a happy, healthy life with your furry friend.
           </p>
           <p class="text-start">
-            Some benefits of coffee include Enhanced Cognitive Function
-            ,Protection Against Certain Diseases and is Rich in Antioxidants
-            which can help protect the body's cells from damage caused by free
-            radicals. This may contribute to overall health and well-being.
+          🎯 Mission<br/>
+          To empower new pet owners with essentials, care tips, and joyful bonding experiences.<br/>
+          🌟 Vision<br/>
+          A world where every first paw-step begins with confidence, comfort, and lifelong companionship.
           </p>
         </div>
         <div class="col-md-4 p-2">
@@ -64,13 +63,13 @@ const Footer = () => {
           </div>
           <p class="mt-3 text-center">
             Follow us on social media to stay updated on the latest offers and
-            tech trends.
+            tips.
           </p>
         </div>
       </section>
       <div class="bg-muted text-center p-3">
         <b class="text-light">
-          Developed by Opulent Delights, &copy; 2025. All Rights Reserved.
+          Developed by PawPrints, &copy; 2025. All Rights Reserved.
         </b>
       </div>
       <link

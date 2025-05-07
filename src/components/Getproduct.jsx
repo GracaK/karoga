@@ -27,6 +27,7 @@ const Getproduct = () => {
     }
   };
 
+
   useEffect(() => {
     getProducts();
   }, []);
@@ -49,23 +50,18 @@ const Getproduct = () => {
       />
       <div className="row">
         {filteredProducts.map((product, index) => (
-          <div className="col-md-6 mb-4" key={index}>
-            <div className="card shadow p-2 bg-dark">
-              <div className="row ">
-                <div className=" col ">
+          <div className="col-md-4 mb-4" key={index}>
+            <div className="card shadow p-2 bg-muted">
+              <div className="card-header">
                   <img
                     src={img_url + product.product_photo}
                     alt={product.product_photo}
-                    className="mt-4"
+                    className="w-100 h-200"
                   />
                 </div>
-                <div className="col mt-5">
-                  <p className="text-light">{product.product_description}</p>
-                </div>
-              </div>
-
-              <div className="card-body">
-                <h5 className="mt-2 text-light">{product.product_name}</h5>
+              <div className="card-body h-200">
+                <h5 className="mt-2 text-dark">{product.product_name}</h5>
+                <p className="text-dark">{product.product_description}</p>
                 <b className="text-warning">Ksh {product.product_cost}</b>{" "}
                 <br />
                 <button
